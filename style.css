@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Dancing Script", cursive;
+}
+body h1{
+    font-size: 2.5rem;
+    border-bottom: 4px solid #A52BB2;
+    margin-bottom: 50px;
+    background-color: transparent;
+    color: white;
+    margin-left: 350px;
+}
+.container{
+    margin-left: 350px;
+    background-color: white;
+    width: 400px;
+    border-radius: 25px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 4px solid #A52BB2;
+    box-shadow: 5px 5px 14px 14px rgb(245, 226, 226);
+}
+.container img{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    background:transparent ;
+    border: 4px solid #A52BB2;
+}
+.container p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 70px;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid #A52BB2;
+    background-color: #A52BB2;
+    color: white;
+}
+.container button{
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    font-weight: 800;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    border: 2px solid #A52BB2;
+    font-family: "Vesper Libre", serif;
+}
+.container button:hover{
+    content: '';
+    transition: all .5s ease-in-out;
+    background-color: #A52BB2;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px rgb(0, 0, 0.4);
+    margin-bottom: 3px;
+    color: white;
+}
+@media (max-width: 768px){
+  
+    .container{
+        margin-right: 180px;
+        width: 350px;
+    }
+    .container img{
+        width: 100px;
+        height: 100px;
+    }
+    body h1{
+        margin-right: 190px;
+        font-size: 2.5rem;
+        width: 350px;
+        margin-bottom: 65px;
+    }
+}
+@media (max-width: 425px){
+    body{
+        overflow: hidden;
+        width: 100%;
+        height: 100vh;
+    }
+    .container{
+        margin-right: 350px;
+        max-width: 100%;
+        margin-bottom: 200px;
+    }
+    body h1{
+        max-width: 100%;
+        font-size: 1.6rem;
+        border: none;
+        margin-bottom: 130px;
+        margin-right: 250px;
+    }
+}
+@media (max-width: 375px){
+    body{
+        overflow: hidden;
+        width: 100%;
+        height: 100vh;
+    }
+    body h1{
+        margin-bottom: 80px;
+    }
+    .container{
+    width: 330px;
+
+    }
+}
+@media (max-width: 320px){
+    .container{
+    width: 290px;
+    }
+}
